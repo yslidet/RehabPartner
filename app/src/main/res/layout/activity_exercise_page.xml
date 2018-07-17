@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_exercise_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fyp.lun.rehabpartner.ExercisePage">
+
+    <TextView
+        android:text="Seated Knee Extension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exerciseTV"
+        android:textStyle="normal|bold"
+        android:textSize="28sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Set 1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/setNumTV"
+        android:textSize="22sp"
+        android:layout_below="@+id/repCounter"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Beginner Level:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/levelTV"
+        android:textSize="18sp"
+        android:layout_below="@+id/setNumTV"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repCount"
+        tools:text="Set Up"
+        android:text="Set Up"
+        android:textSize="80sp"
+        android:fontFamily="serif"
+        android:layout_below="@+id/levelTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/backBtn"
+        android:layout_alignTop="@+id/stopBtn"
+        android:layout_alignEnd="@+id/exerciseTV" />
+
+    <Button
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stopBtn"
+        android:textSize="18sp"
+        android:layout_marginTop="52dp"
+        android:layout_below="@+id/repCount"
+        android:layout_alignStart="@+id/exerciseTV" />
+
+</RelativeLayout>

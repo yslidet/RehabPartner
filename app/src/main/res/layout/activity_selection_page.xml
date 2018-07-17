@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_selection_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fyp.lun.rehabpartner.SelectionPage">
+
+    <TextView
+        android:text="Seated Knee Extension"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/exerciseNameTV"
+        android:textSize="28sp"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="Beginner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/beginnerBtn"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:text="Choose a level:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/textView2"
+        android:textSize="20sp"
+        android:layout_below="@+id/exerciseNameTV"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Intermediate"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/interBtn"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/repsLabel1"
+        android:layout_alignEnd="@+id/beginnerBtn"
+        android:layout_alignStart="@+id/beginnerBtn" />
+
+    <Button
+        android:text="Advance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/advanceBtn"
+        android:layout_below="@+id/repsLabel2"
+        android:layout_alignStart="@+id/repsLabel2"
+        android:layout_alignEnd="@+id/repsLabel2" />
+
+    <TextView
+        android:text="- 5 reps/set  - 1 sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repsLabel2"
+        android:layout_below="@+id/interBtn"
+        android:layout_alignStart="@+id/interBtn"
+        android:layout_alignEnd="@+id/interBtn"
+        android:textSize="13sp" />
+
+    <TextView
+        android:text="- 10 reps/set  - 1 sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repsLabel3"
+        android:layout_below="@+id/advanceBtn"
+        android:layout_alignStart="@+id/advanceBtn"
+        android:layout_alignEnd="@+id/advanceBtn"
+        android:textSize="13sp" />
+
+    <TextView
+        android:text="- 3 reps/set   - 1 sets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/repsLabel1"
+        android:layout_below="@+id/beginnerBtn"
+        android:textSize="13sp"
+        android:layout_alignEnd="@+id/beginnerBtn"
+        android:layout_alignStart="@+id/beginnerBtn" />
+
+    <Button
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/repsLabel3"
+        android:layout_alignStart="@+id/repsLabel3"
+        android:layout_marginTop="19dp"
+        android:id="@+id/backBtn"
+        android:layout_alignEnd="@+id/repsLabel3" />
+
+</RelativeLayout>
